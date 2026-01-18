@@ -1,11 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechWave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #1a0b2e;
+        --color-secondary: #230e3d;
+        --font-inter: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-inter">
+    <header class="bg-primary text-white">
+      <nav
+        class="flex justify-between items-center max-w-19/20 mx-auto md:max-w-16/20"
+      >
+        <h2 class="text-2xl font-bold">
+          Tech<span
+            class="bg-linear-to-tr from-yellow-500 from-2% via-pink-600 to-violet-500 bg-clip-text text-transparent font-extrabold"
+            >Wave</span
+          >
+        </h2>
+        <div class="hidden md:flex items-center gap-8">
+          <p class="group relative font-medium text-base cursor-pointer">
+            About
+            <span
+              class="absolute left-0 bottom-0 w-0 h-px bg-white transition-all duration-200 group-hover:w-full"
+            ></span>
+          </p>
+          <p class="group relative font-medium text-base cursor-pointer">
+            Episodes
+            <span
+              class="absolute left-0 bottom-0 w-0 h-px bg-white transition-all duration-200 group-hover:w-full"
+            ></span>
+          </p>
+          <p class="group relative font-medium text-base cursor-pointer">
+            Host
+            <span
+              class="absolute left-0 bottom-0 w-0 h-px bg-white transition-all duration-200 group-hover:w-full"
+            ></span>
+          </p>
+        </div>
+        <button
+          class="hidden md:flex group items-center gap-1 bg-linear-to-tr from-yellow-500 from-2% via-pink-600 to-violet-700 text-base font-semibold py-3 px-4 rounded-full"
+        >
+          Subscribe
+          <i
+            class="fa-solid fa-arrow-right inline-block transition-transform duration-200 group-hover:translate-x-1"
+          ></i>
+        </button>
+        <div class="md:hidden">
+          <img class="" src="./assets/hamburger-menu.png" alt="" />
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
